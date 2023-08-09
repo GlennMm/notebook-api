@@ -8,7 +8,7 @@ import (
 
 type Note struct {
 	*gorm.Model
-	UserId      uint
+	UserID      int
 	Text        string
 	Permissions []permission.Permission
 	State       string

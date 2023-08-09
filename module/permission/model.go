@@ -7,7 +7,7 @@ import (
 )
 
 type Permission struct {
-	*gorm.Model
-	NoteId   uint
-	UsersIds []user.User `gorm:"many2many:permission_users;"`
+	gorm.Model
+	NoteId int
+	Users  []user.User `gorm:"many2many:permission_users;"`
 }

@@ -1,0 +1,17 @@
+server:
+  host: localhost
+  port: 5000
+  logging: true
+  env: dev
+
+database_dev:
+  type: sqlite
+  name: notebook_db
+
+database_prod:
+  type: mysql
+  name: notebook_db
+  port: 3306
+  host: server_addr
+  user: testuser
+  password: mypassword
